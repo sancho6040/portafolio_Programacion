@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Incendio</title>
+</head>
+<body>
+    <h1>El juego del Incendio</h1>
+    <p>Los bomberos son llamados de emergencia a rescatar un niño, un perro y un gato en un edificio que está en llamas. <br>
+        Todos están en un piso alto. El bombero tiene que escoger como rescatar a los tres individuos. Solo puede llevar uno a la vez. <br>
+        Sin embargo puede mantener un individuo en la escalera siempre. El perro y el gato tienen collar y se pueden amarrar. <br>
+        Pero el perro no se puede quedar con el gato porque se lo come. Ni tampoco con el niño porque lo muerde. <br>
+        Debes poder bajar a los tres uno por uno sin que pase lo anterior. </p>
+    <canvas width="500" height="400" id="canvas"></canvas>
+    <form>
+        <p>
+            <input type="button" value="Niño" id="kid">
+            <input type="button" value="Gato" id="cat">
+            <input type="button" value="perro" id="dog">
+        </p>
+
+        <input type="button" value="Reset" id="reset">
+    </form>
+    <script src="GameObject.js"></script>
+    <script src="Game.js"></script>
+    
+</body>
+</html>

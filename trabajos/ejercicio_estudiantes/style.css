@@ -1,0 +1,26 @@
+html {
+    color: #f39b53;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #6d6d6d;
+}
+
+.pos {
+    margin: 0 auto;
+    width: 250px;
+    position: absolute;
+}
+
+.titulos {
+    border-spacing: 3px;
+    empty-cells: hide;
+}
+  
+div.pos th {
+    text-align: center;
+    border: 1px solid #eee;
+}
+
