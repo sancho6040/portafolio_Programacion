@@ -5,20 +5,25 @@ function init() {
     //inicializa las variables
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+
     //define los parametros del render
     renderer = new THREE.WebGLRenderer();
     renderer.setClearColor(0x000000, 1.0);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
+
     //crea un objeto loader, 
     var loader = new THREE.TextureLoader();
+
     // create the geometry sphere
     var geometry = new THREE.SphereGeometry(90, 32, 32);
+
     // create the material, using a texture of startfield
     var spaceMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.DoubleSide });
     spaceMaterial.map = loader.load("https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg");
     spaceMaterial.side = THREE.BackSide;
+    
     // create the mesh based on geometry and material
     var mesh = new THREE.Mesh(geometry, spaceMaterial);
 
